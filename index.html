@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/db606f3cb8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="navigation">
+        <div class="nav-bar">
+            <nav>
+                <h1 class="logo">ReportHub</h1>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Add Incident</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            </nav>
+            
+        </div>
+    </div>
+
+    <form action="" id="register">
+        <fieldset>
+        <div class="label">
+        <h1 class="logo1">Incident Report Form</h1>
+        <p>Statement Number:</p>
+       <p>Date: <input type="datetime" placeholder="YYYY/MM/DD" required></p>
+        </div>
+        
+        <div class="officer">
+            <h3>Officer on Duty Section</h3>
+       <label for="Name"> Name </label><input type="text" name="name" placeholder="fullnames" required>
+       <label for="IDNO"> IDNO </label><input type="text" placeholder="IDNO." required>
+       <label for="Station"> Station </label><input type="text" placeholder="Station's Name" required>
+        </div>
+       
+        <div class="client">
+            <h3>Reporter's Section</h3>
+        <label for="Name"> Name </label><input type="text" name="name" placeholder="fullnames" required> 
+        <label for="IDNO"> IDNO </label><input type="text" placeholder="idno.">
+
+       <p>Are you a local resident? *</p>
+       <p><input type="radio" name="resident" value="Yes">Yes</p>
+       <p><input type="radio" name="resident" value="No">No</p>
+
+       <p>Area you live?</p>
+       <label for="Location"> Location </label><input type="text" placeholder="Location" required>
+       <label for="Village"> Village </label><input type="text" placeholder="village" required></p>
+        </div>
+
+        <div class="incident">
+            <h3>Incident Section</h3>
+            <label for="Type of Incident">Incident </label>
+            <select name="" id="">
+                <option value=""></option>
+                <option name="Incident" value="Theft">Theft</option>
+                <option name="Incident" name="Incident" value="Rape">Rape</option>
+                <option name="Incident" value="Sexual Harrasment">Sexual Harrasment</option>
+                <option name="Incident" value="Child Labor">Child Labor</option>
+                <option name="Incident" value="Domestic Fight">Domestic Fight</option>
+                <option name="Incident" value="Drug and Substance Abuse">Drug and Substance Abuse</option>
+                <option name="Incident" value="Gender Based Violence">Gender Based Violence</option>
+                <option name="Incident" value="Human Trafficking">Humman Trafficking</option>
+                <option name="Incident" value="Land Issues">Land Issues</option>
+                <option name="Incident" value="Fraud">Fraud</option>
+                <option name="Incident" value="Suicide">Suicide</option>
+                <option name="Incident" value="Other">Other</option>
+            </select></p>
+            <p> Brief description of the stated incident: </p>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="btn">
+
+        <button>Reset</button>
+        <button>Submit</button>
+        </div>
+    </fieldset>
+              
+    </form>
+    
+</body>
+</html>
