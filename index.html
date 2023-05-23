@@ -27,65 +27,82 @@
         </div>
     </div>
 
-    <form action="" id="register">
-        <fieldset>
-        <div class="label">
-        <h1 class="logo1">Incident Report Form</h1>
-        <p>Statement Number:</p>
-       <p>Date: <input type="datetime" placeholder="YYYY/MM/DD" required></p>
-        </div>
+<div id="home">
+
+</div>
+
+<!-- --------------------incident page------------------ -->
+    <div id="add-incident">
+        <form action="incidentform.php" method="post" id="register">
+            <fieldset>
+            <div class="label">
+            <h1 class="logo1">Incident Report Form</h1>
+            <p>Statement Number:</p>
+           <p>Date: <input type="datetime" name="datetime" placeholder="YYYY/MM/DD" required></p>
+            </div>
+            
+            <div class="officer">
+                <h3>Officer on Duty Section</h3>
+           <label for="name"> Name </label><input type="text" name="name" id="name" placeholder="fullnames" required>
+           <label for="idno"> IDNO </label><input type="text" name="idno id="idno" placeholder="IDNO." required>
+           <label for="station"> Station </label><input type="text" name="station" id="station" placeholder="Station's Name" required>
+            </div>
+           
+            <div class="client">
+                <h3>Reporter's Section</h3>
+            <label for="reporters-name"> Name </label><input type="text" name="reporters-name" id="reporters-name" placeholder="fullnames" required> 
+            <label for="Idno"> IDNO </label><input type="text" name="Idno" id="Idno" placeholder="idno.">
+    
+           <p>Are you a local resident? </p>
+           <p>
+            <p><input type="radio" value="1" name="type" value="Yes">Yes
+    
+            <p><input type="radio" value="2" name="type" value="No">No
+           
+           </p> 
+           
+           <label for="location"> Location </label><input type="text" name="location" id="location" placeholder="Location">
+           <label for="village"> Village </label><input type="text" name="village" id="village" placeholder="village" ></p>
+            </div>
+    
+            <p>If not a local resident,</p>
+            <label for="county"> County </label><input type="text" name="county" placeholder="county">
+            <label for="reason"> Reason for being in the area</label><input type="text" name="reason" id="reason" placeholder="reason">
         
-        <div class="officer">
-            <h3>Officer on Duty Section</h3>
-       <label for="Name"> Name </label><input type="text" name="name" placeholder="fullnames" required>
-       <label for="IDNO"> IDNO </label><input type="text" placeholder="IDNO." required>
-       <label for="Station"> Station </label><input type="text" placeholder="Station's Name" required>
-        </div>
-       
-        <div class="client">
-            <h3>Reporter's Section</h3>
-        <label for="Name"> Name </label><input type="text" name="name" placeholder="fullnames" required> 
-        <label for="IDNO"> IDNO </label><input type="text" placeholder="idno.">
+    
+            <div class="incident">
+                <h3>Incident Section</h3>
+                <label for="incident">Incident </label>
+                <select name="" id="incident">
+                    <option value=""></option>
+                    <option name="Incident" value="Theft">Theft</option>
+                    <option name="Incident" name="Incident" value="Rape">Rape</option>
+                    <option name="Incident" value="Sexual Harrasment">Sexual Harrasment</option>
+                    <option name="Incident" value="Child Labor">Child Labor</option>
+                    <option name="Incident" value="Domestic Fight">Domestic Fight</option>
+                    <option name="Incident" value="Drug and Substance Abuse">Drug and Substance Abuse</option>
+                    <option name="Incident" value="Gender Based Violence">Gender Based Violence</option>
+                    <option name="Incident" value="Human Trafficking">Humman Trafficking</option>
+                    <option name="Incident" value="Land Issues">Land Issues</option>
+                    <option name="Incident" value="Fraud">Fraud</option>
+                    <option name="Incident" value="Suicide">Suicide</option>
+                    <option name="Incident" value="Other">Other</option>
+                </select></p>
+                <p> Brief description of the stated incident: </p>
+                <textarea name="report" id="report" cols="50" rows="10"></textarea>
+            </div>
+    
+            <div class="btn">
+    
+             <button>Reset</button>
+            <button>Submit</button>
+            </div>
+        </fieldset>
+                  
+        </form>
+    </div>
 
-       <p>Are you a local resident? *</p>
-       <p><input type="radio" name="resident" value="Yes">Yes</p>
-       <p><input type="radio" name="resident" value="No">No</p>
-
-       <p>Area you live?</p>
-       <label for="Location"> Location </label><input type="text" placeholder="Location" required>
-       <label for="Village"> Village </label><input type="text" placeholder="village" required></p>
-        </div>
-
-        <div class="incident">
-            <h3>Incident Section</h3>
-            <label for="Type of Incident">Incident </label>
-            <select name="" id="">
-                <option value=""></option>
-                <option name="Incident" value="Theft">Theft</option>
-                <option name="Incident" name="Incident" value="Rape">Rape</option>
-                <option name="Incident" value="Sexual Harrasment">Sexual Harrasment</option>
-                <option name="Incident" value="Child Labor">Child Labor</option>
-                <option name="Incident" value="Domestic Fight">Domestic Fight</option>
-                <option name="Incident" value="Drug and Substance Abuse">Drug and Substance Abuse</option>
-                <option name="Incident" value="Gender Based Violence">Gender Based Violence</option>
-                <option name="Incident" value="Human Trafficking">Humman Trafficking</option>
-                <option name="Incident" value="Land Issues">Land Issues</option>
-                <option name="Incident" value="Fraud">Fraud</option>
-                <option name="Incident" value="Suicide">Suicide</option>
-                <option name="Incident" value="Other">Other</option>
-            </select></p>
-            <p> Brief description of the stated incident: </p>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
-        </div>
-
-        <div class="btn">
-
-        <button>Reset</button>
-        <button>Submit</button>
-        </div>
-    </fieldset>
-              
-    </form>
+    
     
 </body>
 </html>
